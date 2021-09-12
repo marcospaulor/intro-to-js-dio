@@ -85,3 +85,62 @@ console.log(date.getFullYear()) // Ano
 console.log(date.getHours()) // Hora
 console.log(date.getMinutes()) // Minutos
 console.log(date.getSeconds()) // Segundos
+
+// Funções
+function soma(n1, n2) {
+    return n1 + n2
+}
+
+alert(soma(5, 10))
+
+function setReplace(frase, nome, novo_nome) {
+    return frase.replace(nome, novo_nome)
+}
+
+alert(setReplace("Vai Japão", "Japão", "Brasil"))
+
+function validaIdade(idade) {
+
+    if (idade >= 18) {
+        return true
+    } else {
+        return false
+    }
+}
+
+var idade = prompt("Qual sua idade?")
+console.log(validaIdade(idade))
+
+var counter = 0
+function clicked(){
+    counter++
+    alert("Obrigado por clicar " + counter + " vezes")
+
+    document.getElementById("text").innerHTML = "Obrigado por clicar " + counter + " vezes"
+}
+
+// Redirecionamento para outra página
+function redirect(){
+    window.open("https://www.google.com") // abre outra janela
+    window.location.href = "https://www.google.com.br" // abre na mesma janela
+}
+
+function over(){
+    document.getElementById("write").innerHTML = "Obrigado por passar o mouse"
+}
+
+function mudar(){
+    document.getElementById("write").innerHTML = "Mudooooou"
+}
+
+function mudarPorElemento(element){
+    element.innerHTML = "Mudooooou"
+}
+
+function load(){
+    alert("Página carregada")
+}
+
+function funcaoChange(element){
+    console.log(element.value)
+}

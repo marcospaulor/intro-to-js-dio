@@ -4,9 +4,20 @@
     <meta charset='utf-8'>
     <title>My Page</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-</head>
-<body>
-    <h1>Hello, World!</h1>
     <script src='main.js'></script>
+</head>
+<body onload="load()">
+    <h1>Hello, World!</h1>
+    <button type="button" onClick="clicked()"> Botão </button>
+    <h3 id="text"></h3>
+    <button type="button" onClick="redirect()"> Redirect </button>
+    <h3 onmouseover="over()">Passe o mouse aqui </h3>
+    <h4 id="write" onmouseout="mudar()"></h4>
+    <h4 id="write" onmouseout="mudarPorElemento(this)">Muda passando o próprio elemento</h4>
+    <select onchange="funcaoChange(this)">
+        <option value="1">Opção 1</option>
+        <option value="2">Opção 2</option>
+        <option value="3">Opção 3</option>
+    </select>
 </body>
 </html>
